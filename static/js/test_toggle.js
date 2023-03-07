@@ -99,25 +99,27 @@ const safetyIntegration = {
                 </div>
             </div>
             <div class="form-group">
-                <h9>Save intermediates to</h9>
-                <p>
-                    <h13>Optional</h13>
-                </p>
-                <input type="text" class="form-control form-control-alternative"
-                    placeholder=""
-                    v-model="save_intermediates_to"
-                    :class="{ 'is-invalid': error.save_intermediates_to }">
-                <div class="invalid-feedback">[[ error.save_intermediates_to ]]</div>
+                <form autocomplete="off">
+                    <h9>Save intermediates to</h9>
+                    <p>
+                        <h13>Optional</h13>
+                    </p>
+                    <input type="text" class="form-control form-control-alternative"
+                        placeholder=""
+                        v-model="save_intermediates_to"
+                        :class="{ 'is-invalid': error.save_intermediates_to }">
+                    <div class="invalid-feedback">[[ error.save_intermediates_to ]]</div>
 
-                <h9>Requirements</h9>
-                <p>
-                    <h13>Optional</h13>
-                </p>
-                <input type="text" class="form-control form-control-alternative"
-                    placeholder=""
-                    v-model="requirements"
-                    :class="{ 'is-invalid': error.requirements }">
-                <div class="invalid-feedback">[[ error.requirements ]]</div>
+                    <h9>Requirements</h9>
+                    <p>
+                        <h13>Optional</h13>
+                    </p>
+                    <input type="text" class="form-control form-control-alternative"
+                        placeholder=""
+                        v-model="requirements"
+                        :class="{ 'is-invalid': error.requirements }">
+                    <div class="invalid-feedback">[[ error.requirements ]]</div>
+                </form>
             </div>
         </div>
     `
